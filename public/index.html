@@ -3,181 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <title>Herbed Sauce Company</title>
-    <link rel=”stylesheet” href=”css/bootstrap.css”>
   </head>
   <style>
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background-color: black;
-    }
-    #main {
       width: 100%;
-      height: 100%;
-      margin: 600px auto;
-      background: #ccc;
-      position: relative;
-      -webkit-perspective: 800px;
-      -moz-perspective: 800px;
-      -o-perspective: 800px;
-      perspective: 800px;
-    }
-    .com_img {
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      -o-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      -webkit-transition: all 0.5s ease-in;
-      -moz-transition: all 0.5s ease-in;
-      -o-transition: all 0.5s ease-in;
-      transition: all 0.5s ease-in;
-    }
-    .com_img img {
-      width: 400px;
-      height: auto;
-    }
-    .com_img {
-      position: absolute;
-    }
-    /* 居中 */
-    .center_ {
-      left: 50%;
-      margin-left: -200px;
-      -webkit-transform: scale(0.5);
-      -moz-transform: scale(0.5);
-      -o-transform: scale(0.5);
-      transform: scale(0.5);
-      opacity: 0;
-    }
-    /* 居左 */
-    .left_ {
-      left: 25%;
-      margin-left: -200px;
-      -webkit-transform: scale(0.7);
-      -moz-transform: scale(0.7);
-      -o-transform: scale(0.7);
-      transform: scale(0.7);
-      opacity: 1;
-    }
-    /* 居右 */
-    .right_ {
-      left: 75%;
-      margin-left: -200px;
-      -webkit-transform: scale(0.7);
-      -moz-transform: scale(0.7);
-      -o-transform: scale(0.7);
-      transform: scale(0.7);
-      opacity: 1;
-    }
-    /* 最前居中 */
-    .mid_top {
-      left: 50%;
-      margin-left: -200px;
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
-      z-index: 999;
-      opacity: 1;
-    }
-    .left_:after,
-    .right_:after,
-    .center_:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 400px;
-      height: 250px;
-      background: rgb(255, 255, 255);
-      opacity: 0.5;
-      background: black;
-    }
-    /* 新增照片数量 */
-    .num_of_img {
-      position: absolute;
-      bottom: 0;
-      z-index: 999;
-      color: #666;
-      width: 100%;
-      text-align: center;
-      font-size: 20px;
+      img {
+        width: 100%;
+      }
     }
   </style>
   <body>
-    <div class="”container”">
-      <p>“A huge revelation is on its way, stay tuned!</p>
-      <div id="main">
-        <div class="com_img mid_top">
-          <img src="./images/1.jpg" alt="" />
-        </div>
-        <div class="com_img right_">
-          <img src="./images/2.jpg" alt="" />
-        </div>
-        <div class="com_img center_">
-          <img src="./images/3.jpg" alt="" />
-        </div>
-        <div class="com_img center_">
-          <img src="./images/4.jpg" alt="" />
-        </div>
-        <div class="com_img left_">
-          <img src="./images/5.jpg" alt="" />
-        </div>
-        <div class="com_img left_">
-          <img src="./images/6.jpg" alt="" />
-        </div>
-        <div class="com_img left_">
-          <img src="./images/7.jpg" alt="" />
-        </div>
-      </div>
-
-      <div class="mask"></div>
-      <img src="" alt="" class="beBig" />
-    </div>
+    <picture>
+      <source
+        media="(max-aspect-ratio: 3/4)"
+        sizes="100vw"
+        srcset="
+          https://res.cloudinary.com/dcrauop6a/image/upload/c_scale,h_1000,w_640/Coming_Soon_reihlx.jpg 640w,
+          https://res.cloudinary.com/dcrauop6a/image/upload/c_scale,h_1000,w_760/Coming_Soon_reihlx.jpg 760w,
+          https://res.cloudinary.com/dcrauop6a/image/upload/c_scale,h_1000,w_830/Coming_Soon_reihlx.jpg 830w
+        "
+      />
+      <source
+        media="(max-aspect-ratio: 4/3)"
+        sizes="100vw"
+        srcset="
+          https://res.cloudinary.com/dcrauop6a/image/upload/c_scale,h_1000,w_770/Coming_Soon_reihlx.jpg   770w,
+          https://res.cloudinary.com/dcrauop6a/image/upload/c_scale,h_1000,w_1440/Coming_Soon_reihlx.jpg 1440w
+        "
+      />
+      <source
+        media="(max-aspect-ratio: 39/20)"
+        sizes="100vw"
+        srcset="
+          https://res.cloudinary.com/dcrauop6a/image/upload/c_scale,h_1000,w_1024/Coming_Soon_reihlx.jpg 1024w,
+          https://res.cloudinary.com/dcrauop6a/image/upload/c_scale,h_1000,w_1440/Coming_Soon_reihlx.jpg 1440w,
+          https://res.cloudinary.com/dcrauop6a/image/upload/c_scale,h_1000,w_2048/Coming_Soon_reihlx.jpg 2048w,
+          https://res.cloudinary.com/dcrauop6a/image/upload/c_scale,h_1000,w_2880/Coming_Soon_reihlx.jpg 2880w
+        "
+      />
+      <source
+        sizes="100vw"
+        srcset="
+          https://res.cloudinary.com/dcrauop6a/image/upload/t_1440/Coming_Soon_reihlx.jpg 1440w,
+          https://res.cloudinary.com/dcrauop6a/image/upload/t_1920/Coming_Soon_reihlx.jpg 1920w,
+          https://res.cloudinary.com/dcrauop6a/image/upload/t_2880/Coming_Soon_reihlx.jpg 2880w
+        "
+      />
+      <img
+        alt="coming soon"
+        src="https://res.cloudinary.com/dcrauop6a/image/upload/v1689959958/Coming_Soon_reihlx.png"
+      />
+    </picture>
   </body>
-  <script src="jquery.js"></script>
-  <script>
-    $.fn.banner_3d = function () {
-      //获取所有图片
-      var img_box = this.find(".com_img"),
-        num_of_img = img_box.length,
-        now_ = this.find("._now_"),
-        zong_ = this.find("._zong_");
-      zong_.html(num_of_img);
-
-      //点击事件
-      img_box.on("click", function () {
-        var this_index = $(this).index();
-        now_.html(this_index + 1);
-        var prev_b = this_index - 1;
-        if (prev_b < 0) prev_b = num_of_img - 1;
-        var next_b = ++this_index;
-        if (next_b > num_of_img - 1) next_b = 0;
-        img_box.addClass("center_").removeClass("left_").removeClass("right_");
-        $(this)
-          .addClass("mid_top")
-          .removeClass("right_")
-          .removeClass("left_")
-          .removeClass("center_");
-        img_box
-          .eq(prev_b)
-          .addClass("left_")
-          .removeClass("right_")
-          .removeClass("mid_top");
-        img_box
-          .eq(next_b)
-          .addClass("right_")
-          .removeClass("left_")
-          .removeClass("mid_top");
-      });
-      return this;
-    };
-    $("#main").banner_3d();
-  </script>
 
   <script>
+    import { Cloudinary } from "@cloudinary/url-gen";
+    const cld = new Cloudinary({ cloud: { cloudName: "dcrauop6a" } });
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "firebase/app";
     import { getAnalytics } from "firebase/analytics";
