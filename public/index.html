@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-critters-container>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Herbed Sauce Company</title>
+    <meta charset="utf-8">
+    <title>HerbedSauceApp</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/10.1.0/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
-    <!-- <script defer src="/__/firebase/10.1.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.1.0/firebase-auth-compat.js"></script>
     <script defer src="/__/firebase/10.1.0/firebase-database-compat.js"></script>
     <script defer src="/__/firebase/10.1.0/firebase-firestore-compat.js"></script>
     <script defer src="/__/firebase/10.1.0/firebase-functions-compat.js"></script>
@@ -16,13 +18,13 @@
     <script defer src="/__/firebase/10.1.0/firebase-storage-compat.js"></script>
     <script defer src="/__/firebase/10.1.0/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/10.1.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.1.0/firebase-performance-compat.js"></script> -->
+    <script defer src="/__/firebase/10.1.0/firebase-performance-compat.js"></script>
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-  </head>
+  <link rel="stylesheet" href="styles.ef46db3751d8e999.css"></head>
   <body>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -64,48 +66,6 @@
             "Error loading the Firebase SDK, check the console.";
         }
       });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const loadEl = document.querySelector("#load");
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            // "auth",
-            // "database",
-            // "firestore",
-            // "functions",
-            // "messaging",
-            // "storage",
-            // "analytics",
-            // "remoteConfig",
-            // "performance",
-          ].filter((feature) => typeof app[feature] === "function");
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(
-            ", "
-          )}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent =
-            "Error loading the Firebase SDK, check the console.";
-        }
-      });
 
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "firebase/app";
@@ -129,7 +89,6 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
-
-    <app-root> </app-root>
-  </body>
+    <app-root></app-root>
+  <script src="runtime.6364cb5be3f1fa10.js" type="module"></script><script src="polyfills.bb4a6507c6f2c5e7.js" type="module"></script><script src="main.50b1d936a4cd9412.js" type="module"></script></body>
 </html>
